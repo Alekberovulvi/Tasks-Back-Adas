@@ -1,0 +1,276 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar {
+    background-color: #862429;
+    display: flex;
+    padding: 20px 120px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar .navbar_logo {
+    width: 90px;
+    height: 90px;
+}
+
+.navbar .navbar_logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.navbar .navbarlinks ul {
+    display: flex;
+    align-items: center;
+    column-gap: 20px;
+}
+
+.navbar .navbarlinks ul li {
+    list-style: none;
+}
+
+.navbar .navbarlinks ul li a.active {
+    color: #7fff00;
+}
+
+.navbar .navbarlinks ul li a {
+    color: white;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+h1{
+    text-align: center;
+        font-weight: 700;
+        font-size: 60px;
+        margin-top: 30px;
+        color: #474544;
+}
+
+.burgers {
+    padding: 40px 0;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 30px;
+}
+
+.burgers .content{
+        align-items: center;
+            background-image: linear-gradient(to top, #dfe9f3 0%, white 100%);
+            display: flex;
+            justify-content: center;
+}
+
+.burgers .content .card{
+        background-color: #fff;
+            box-shadow: 0 2px 10px #444;
+            height: 360px;
+            position: relative;
+            transition: all .5s ease-in-out;
+            transform-style: preserve-3d;
+            width: 340px;
+}
+
+
+.burgers .content .card .side{
+        backface-visibility: hidden;
+            height: 100%;
+            position: absolute;
+            overflow: hidden;
+            cursor: pointer;
+}
+
+.burgers .content .card .side::before{
+        backface-visibility: hidden;
+            bottom: 0;
+            content: "+";
+            color: #fff;
+            font-size: 45px;
+            right: 12px;
+            position: absolute;
+            transition: all 0s !important;
+            z-index: 101;
+}
+
+
+.burgers .content .card .side .card-img{
+    height: 70%;
+        width: 100%;
+}
+
+.burgers .content .card .side .card-img img{
+        height: 100%;
+            object-fit: cover;
+            width: 100%;
+}
+
+.burgers .content .card .side .card-info{
+        align-items: space-around;
+            display: flex;
+            flex-wrap: wrap;
+            height: 30%;
+            width: 100%;
+}
+
+.burgers .content .card .side .card-info .card-info-title{
+align-items: center;
+    display: flex;
+    font-family: Wendy One, sans-serif;
+    font-size: 25px;
+    justify-content: space-between;
+    padding: 10px;
+    width: 100%;
+}
+
+.burgers .content .card .side .card-info .card-info-text {
+        color: #555;
+            display: block;
+            font-size: 16px;
+            padding: 10px;
+            width: calc(100% - 50px);
+}
+
+.burgers .content .card .side::after {
+        backface-visibility: hidden;
+            bottom: 0;
+            border-color: transparent #111 #111 transparent;
+            border-style: solid;
+            border-width: 40px 40px 40px 40px;
+            content: "";
+            position: absolute;
+            right: 0;
+            transition: all 0s !important;
+}
+
+.burgers .content .card .back{
+        background-color: #fff;
+            backface-visibility: hidden;
+            height: 100%;
+            position: relative;
+            transform: rotateY(180deg);
+            width: 100%;
+            z-index: 102;
+}
+
+.burgers .content .card .back .card-img .card-img-back{
+    height: 40%;
+        width: 100%;
+}
+
+.burgers .content .card .back .card-img .card-img-back img{
+    height: 100%;
+        object-fit: cover;
+        width: 100%;
+}
+
+.burgers .content .card .back .card-img .card-img-back .cardClose {
+    position: absolute;
+        top: 5px;
+        right: 5px;
+        border: none;
+        background-color: #fff;
+        padding: 4px 10px;
+        color: #ff3f34;
+        font-size: 18px;
+        box-shadow: 2px 2px 10px #111;
+        cursor: pointer;
+}
+
+.burgers .content .card .back .card-info .card-info-back {
+        height: 60%;
+}
+
+.burgers .content .card .back .card-info .card-info-back .card-info-title{
+        align-items: center;
+            display: flex;
+            font-family: Wendy One, sans-serif;
+            font-size: 25px;
+            justify-content: space-between;
+            padding: 10px;
+            width: 100%;
+}
+
+.burgers .content .card .back .card-info .card-info-back .card-info-title span{
+        color: #ffa801;
+            font-size: 18px !important;
+            font-weight: 700;
+}
+
+.burgers .content .card .back .card-info .card-info-back .card-info-text{
+        color: #555;
+            display: block;
+            font-size: 16px;
+            padding: 10px;
+            width: calc(100% - 50px);
+}
+
+.burgers .content .card .back .card-info .card-info-back .card-form{
+        width: 100%;
+}
+
+.burgers .content .card .back .card-info .card-info-back .card-form form{
+        align-content: space-between;
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            height: 100%;
+}
+
+.burgers .content .card .back .card-info .card-info-back .card-form form .flex-center{
+        align-items: center;
+            display: flex;
+            justify-content: center;
+            width: 100%;
+}
+
+.burgers .content .card .back .card-info .card-info-back .card-form form .flex-center button{
+        background-color: #ffa801;
+            border: none;
+            color: #fff;
+            font-size: 25px;
+            font-weight: 700;
+            padding: 1px;
+            width: 30%;
+            cursor: pointer;
+}
+
+.card-form input[type=text] {
+    height: 31px;
+    font-size: 20px;
+    margin: 0 10px;
+    text-align: center;
+    width: 20%;
+}
+
+.card-form button {
+    background-color: #ffa801;
+    border: none;
+    color: #fff;
+    font-size: 25px;
+    font-weight: 700;
+    padding: 1px;
+    width: 30%;
+    cursor: pointer;
+}
+
+footer {
+    background-color: #862429;
+    padding: 30px 0;
+}
+
+.footer_social {
+    display: flex;
+    width: max-content;
+    margin: 0 auto;
+    column-gap: 20px;
+    font-size: 40px;
+}
+
+.footer_social a {
+    color: #fff;
+    text-decoration: none;
+}

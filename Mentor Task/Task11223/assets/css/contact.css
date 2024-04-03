@@ -1,0 +1,144 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar {
+    background-color: #862429;
+    display: flex;
+    padding: 20px 120px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar .navbar_logo {
+    width: 90px;
+    height: 90px;
+}
+
+.navbar .navbar_logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.navbar .navbarlinks ul {
+    display: flex;
+    align-items: center;
+    column-gap: 20px;
+}
+
+.navbar .navbarlinks ul li {
+    list-style: none;
+}
+
+.navbar .navbarlinks ul li a.active {
+    color: #7fff00;
+}
+
+.navbar .navbarlinks ul li a {
+    color: white;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.container{
+    border: solid 3px #474544;
+        max-width: 768px;
+        margin: 60px auto;
+        position: relative;
+}
+
+.container h1{
+        text-align: center;
+            font-weight: 700;
+            font-size: 60px;
+            margin-top: 30px;
+}
+
+.container .underline{
+        border-bottom: solid 2px #474544;
+            margin: -0.512em auto;
+            width: 80px;
+}
+
+
+.container form{
+        padding: 37.5px;
+            margin: 50px 0;
+}
+
+#contact_form .name{
+float: left;
+    width: 45%;
+}
+
+#contact_form .email{
+        float: right;
+            width: 45%;
+}
+
+#contact_form input[type=text],
+[type=email],
+select,
+textarea {
+    background: none;
+    border: none;
+    border-bottom: solid 2px #474544;
+    color: #474544;
+    font-size: 1em;
+    font-weight: 400;
+    letter-spacing: 1px;
+    margin: 0 0 1.875em;
+    padding: 0 0 0.875em;
+    text-transform: uppercase;
+    width: 100%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    -ms-transition: all .3s;
+    -o-transition: all .3s;
+    transition: all .3s;
+}
+
+#contact_form .submit #form_button{
+        background: none;
+            border: solid 2px #474544;
+            color: #474544;
+            cursor: pointer;
+            display: inline-block;
+            font-family: Helvetica, Arial, sans-serif;
+            font-size: .875em;
+            font-weight: 700;
+            outline: none;
+            padding: 20px 35px;
+            text-transform: uppercase;
+            -webkit-transition: all .3s;
+            -moz-transition: all .3s;
+            -ms-transition: all .3s;
+            -o-transition: all .3s;
+            transition: all .3s;
+}
+
+footer {
+    background-color: #862429;
+    padding: 30px 0;
+}
+
+.footer_social {
+    display: flex;
+    width: max-content;
+    margin: 0 auto;
+    column-gap: 20px;
+    font-size: 40px;
+}
+
+.footer_social a {
+    color: #fff;
+    text-decoration: none;
+}
